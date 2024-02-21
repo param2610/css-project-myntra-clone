@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #nav{
+        background-color: rgb(63, 255, 4);
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2px;
+    }
+    #imgcont{
+        border: 5px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #elonmusk{
+        height: 350px;
+        width: 350px;
+        border: 4px solid black;
+        display: flex;
+    }
+    #boxcontainer{
+        border: 4px solid rebeccapurple;
+        display: flex;
+        justify-content: space-around;
+        height: 90px;
+        width: 200px;
+
+    }
+    .boxx{
+        height: 75px;
+        width: 75px;
+        border: 4px solid rgb(123, 255, 0);
+        flex-shrink: 0;
+    }
+    #box3{
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    #mediabox{
+        height: 50px;
+        width: 50px;
+        background-color: chocolate;
+        border: 4px solid blue;
+    }
+    @media screen and (min-width: 400px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: rgb(0, 225, 255);
+  }
+}
+</style>
+<body>
+<header></header>
+<main>
+    <nav id="nav">
+        <a href="www.google,com">home</a>
+        <a href="www.google,com">about us</a>
+        <a href="www.google,com">contacy us</a>
+        <a href="www.google,com">more</a>
+    </nav>
+    <div id="imgcont">
+        <img id="elonmusk" src="elonmusk" alt="elon musk image is there">
+    </div>
+    <div id="boxcontainer">
+        <div id="box1" class="boxx">boxx1</div>
+        <div id="box2" class="boxx">box2</div>
+        <div id="box3" class="boxx">box3</div>
+    </div>
+    <div id="mediabox">
+        media box
+    </div>
+</main>
+<footer></footer>
+    
+</body>
+</html>

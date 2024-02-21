@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        height: 20px;
+        width: 150px;
+        background-color: crimson;
+        border: 4px solid royalblue;
+        border-radius: 10px;
+ 
+    }
+    #fill{
+        height: 20px;
+        width: 50px;
+        background-color: rgb(102, 255, 13);
+        border-radius: 7px;
+        animation: animate_progress 3s 5;
+    }
+    @keyframes animate_progress{
+        0%{width: 0% ;}
+        50%{width: 55% ;}
+        75%{width: 80% ;}
+        95%{width: 100%;}
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="fill"></div>
+        <div id="progressbar">progress bar</div>
+    </div>
+    
+</body>
+</html>
